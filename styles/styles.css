@@ -579,3 +579,25 @@ a {
     margin-bottom: 0.5rem;
   }
 }
+
+/* Section: Application */
+.application {
+  background-color: #2396ED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+}
+
+.application .container .application-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  line-height: 1.2;
+}
+
+@media (min-width: 640px) {
+  .application .container .application-container h1 {
+    font-size: 3.1rem;
+  }
+}
