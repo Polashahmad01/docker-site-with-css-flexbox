@@ -546,3 +546,36 @@ a {
     width: 100%;
   }
 }
+
+/* Section: Subscription */
+.subscription {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.subscription .container .subscription-container {
+  text-align: center;
+}
+
+.subscription .container .subscription-container h1 {
+  font-size: 2rem;
+  color: #0b214a;
+}
+
+.subscription .container .subscription-container p a {
+  color: #0073ec;
+}
+
+@media (min-width: 640px) {
+  .subscription .container .subscription-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .subscription .container .subscription-container p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+}
