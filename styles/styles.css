@@ -124,8 +124,9 @@ a {
 
 /* Section: Develop */
 .develop {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 90vh;
   color: #fff;
 }
@@ -246,5 +247,80 @@ a {
   .develop .container .icons-container .icon svg {
     height: 25px;
     width: 25px;
+  }
+}
+
+/* Section: Accelerate */
+.accelerate {
+  background-color: #E8EBEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.accelerate .accelerate-container h1 {
+  color: #0b214a;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.accelerate .accelerate-container .stats .stats-item {
+  margin-bottom: 1rem;
+}
+
+.accelerate .accelerate-container .stats .stats-item h4 {
+  color: #022144;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.accelerate .accelerate-container .stats .stats-item p {
+  text-align: center;
+}
+
+.accelerate .accelerate-container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accelerate .accelerate-container .btn button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0073ec;
+  border: none;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in;
+}
+
+.accelerate .accelerate-container .btn button:hover {
+  background-color: #0162cc;
+}
+
+@media(min-width: 640px) {
+  .accelerate .accelerate-container h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+
+  .accelerate .accelerate-container .stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .accelerate .accelerate-container .btn button {
+    padding: 1.5rem 5rem;
+    font-weight: bold;
+    margin-bottom: 0;
   }
 }
