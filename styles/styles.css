@@ -507,3 +507,42 @@ a {
     padding: 0.7rem 2.5rem;
   }
 }
+
+/* Section: Tools */
+.tools {
+  background-color: #E8EBEE;
+  padding: 4rem 0;
+}
+
+.tools .container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.tools .container .tools-container .icon img {
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  .tools .container h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .tools .container .tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tools .container .tools-container .icon {
+    width: 220px;
+  }  
+
+  .tools .container .tools-container .icon img {
+    width: 100%;
+  }
+}
