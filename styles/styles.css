@@ -9,6 +9,7 @@
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 img {
@@ -434,5 +435,75 @@ a {
   .new-to-containers .container .content-txt a {
     text-decoration: underline;
     font-size: 1.5rem;
+  }
+}
+
+/* Section: Community */
+.community {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 2rem 0;
+}
+
+.community .container .community-wrapper .text-wrapper {
+  flex: 1;
+}
+
+.community .container .community-wrapper .img {
+  flex: 1;
+}
+
+.community .container .community-wrapper h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.community .container .community-wrapper p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.community .container .community-wrapper .join {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.community .container .community-wrapper .join a {
+  background-color: #003f8c;
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in;
+}
+
+.community .container .community-wrapper .join a:hover {
+  color: #333;
+  background-color: #2496ed;
+}
+
+@media(min-width: 640px) {
+  .community .container .community-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .community .container .community-wrapper h1,
+  .community .container .community-wrapper p,
+  .community .container .community-wrapper .join {
+    text-align: left;
+  }
+
+  .community .container .community-wrapper .join a {
+    padding: 0.7rem 2.5rem;
   }
 }
