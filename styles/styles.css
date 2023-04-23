@@ -8,5 +8,93 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  
+  line-height: 1.5;
 }
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Section: Navigation */
+.navbar {
+  background-color: #003F8C;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar .container .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  margin: -1.5rem 0;
+}
+
+.navbar .container .logo svg {
+  align-self: center;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.navbar .container .logo svg:hover {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.navbar .container .nav {
+  display: flex;
+}
+
+.navbar .container .nav li {
+  margin-left: 2rem;
+}
+
+.navbar .container .nav li a {
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+.navbar .container .nav li a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 640px) {
+  .navbar {
+    font-size: 0.9rem;
+  }
+
+  .navbar .container .nav li {
+    margin-left: 1rem;
+  }
+}
+
