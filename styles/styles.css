@@ -35,6 +35,12 @@ a {
   padding: 0 30px;
 }
 
+.header-container {
+  background-color: #003F8C;
+  overflow: hidden;
+  height: 100vh;
+}
+
 /* Section: Navigation */
 .navbar {
   background-color: #003F8C;
@@ -42,6 +48,7 @@ a {
   font-size: 1rem;
   font-weight: normal;
   overflow: hidden;
+  height: 10vh;
 }
 
 .navbar .container {
@@ -112,6 +119,132 @@ a {
     width: 120px;
     height: 120px;
   }
-
 }
 
+
+/* Section: Develop */
+.develop {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 90vh;
+  color: #fff;
+}
+
+.align {
+  margin: auto;
+}
+
+.develop .container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.develop .container h1 span {
+  font-weight: 300;
+}
+
+.develop .container .title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  opacity: 0.80;
+}
+
+.develop .container .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.develop .container .btn-container button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0073ec;
+  border: none;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease-in;
+}
+
+.develop .container .btn-container button:hover {
+  background-color: #0162cc;
+}
+
+.develop .container .btn-container button .download-txt {
+  margin-bottom: 0.3rem;
+ }
+
+.develop .container .btn-container button .icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.develop .container .btn-container button .icon-wrapper svg {
+  height: 15px;
+  width: 15px;
+  margin-right: 0.3rem;
+}
+
+.develop .container .btn-container button .icon-wrapper strong {
+  margin-top: 0.1rem;
+  font-weight: normal;
+}
+
+.develop .container .icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.develop .container .icons-container .icon {
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.develop .container .icons-container .icon svg {
+  height: 20px;
+  width: 20px;
+}
+
+.develop .container .icons-container .icon p {
+  font-weight: normal;
+  font-size: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .develop .container h1 {
+    font-size: 4rem;
+  }
+
+  .develop .container .title {
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .develop .container .btn-container button {
+    padding: 1.5rem 5rem;
+  }
+
+  .develop .container .btn-container button .download-txt {
+    font-weight: bold;
+  }
+
+  .develop .container .icons-container {
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .develop .container .icons-container .icon svg {
+    height: 25px;
+    width: 25px;
+  }
+}
