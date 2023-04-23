@@ -394,3 +394,45 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* Section: New to Containers */
+.new-to-containers {
+  background-color: #003F8C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.new-to-containers .container .content-txt h1 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.new-to-containers .container .content-txt p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.new-to-containers .container .content-txt a {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+@media(min-width: 640px) {
+  .new-to-containers .container .content-txt h1 {
+    font-size: 3rem;
+  }
+
+  .new-to-containers .container .content-txt p {
+    font-size: 1.6rem;
+  }
+
+  .new-to-containers .container .content-txt a {
+    text-decoration: underline;
+    font-size: 1.5rem;
+  }
+}
