@@ -296,7 +296,6 @@ a {
   padding: 1rem 1.5rem;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 1.5rem;
   margin-top: 2rem;
   transition: all 0.3s ease-in;
 }
@@ -321,6 +320,77 @@ a {
   .accelerate .accelerate-container .btn button {
     padding: 1.5rem 5rem;
     font-weight: bold;
-    margin-bottom: 0;
+  }
+}
+
+/* Section: Build Share Run */
+.build-share-run {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+  overflow-x: hidden;
+}
+
+.build-share-run .docker-txt {
+  margin-bottom: 2rem;
+}
+
+.build-share-run .docker-txt h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.build-share-run .docker-txt p {
+  text-align: center;
+}
+
+.build-share-run .container .build-container h3 {
+  font-size: 2rem;
+  color: #0b214a !important;
+}
+
+.build-share-run .container .build-container ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.build-share-run .container .build-container ul li {
+  color: #697a89!important;
+}
+
+@media(min-width: 640px) {
+  .build-share-run .container .build-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .build-share-run .container .share-container {
+    flex-direction: row;
+  }
+
+  .build-share-run .docker-txt h1 {
+    font-size: 3.1rem;
+  }
+
+  .build-share-run .container .build-container .txt {
+    flex: 1;
+  }
+
+  .build-share-run .container .build-container .img-container {
+    flex: 1;
+  }
+
+  .build-share-run .docker-txt p {
+    font-size: 1.5rem;
+  }
+
+  .build-share-run .container .build-container ul li {
+    font-size: 1.2rem;
   }
 }
