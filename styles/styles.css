@@ -580,6 +580,94 @@ a {
   }
 }
 
+/* Section: Development */
+.development {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.development .container .development-container h1 {
+  font-size: 2rem;
+  color: #0b214a;
+  text-align: center;
+}
+
+.development .container .development-container .steps .step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.development .container .development-container .steps .step .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  border-radius: 50px;
+  background-color: #2396ED;
+}
+
+.development .container .development-container .steps .step span {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.development .container .development-container .steps .step span a {
+  color: #2396ED;
+}
+
+.development .container .development-container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.development .container .development-container .btn button {
+  background-color: #0073ec;
+  border: none;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 2rem 0;
+  transition: all 0.3s ease-in;
+}
+
+.development .container .development-container .btn button:hover {
+  background-color: #0162cc;
+}
+
+@media (min-width: 640px) {
+  .development {
+    padding: 7rem 0;
+  }
+
+  .development .container .development-container h1 {
+    font-size: 2.3rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+  }
+
+  .development .container .development-container .steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .development .container .development-container .steps .step .circle {
+    height: 50px;
+    width: 50px;
+  }
+
+  .development .container .development-container .steps .step span {
+    font-size: 1.2rem;
+  }
+}
+
 /* Section: Application */
 .application {
   background-color: #2396ED;
