@@ -45,56 +45,73 @@ a {
 }
 
 .navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
+  display: block;
+  margin: auto;
 }
 
 .navbar .container .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  width: 120px;
-  margin: -1.5rem 0;
+  margin: -1.3rem 0;
 }
 
 .navbar .container .logo svg {
-  align-self: center;
-  margin-top: 0.5rem;
-  transition: all 0.3s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem !important;
+  width: 100px;
+  height: 100px;
+  margin: auto;
   cursor: pointer;
+  transition: all 0.3s ease-in;
 }
 
 .navbar .container .logo svg:hover {
-  fill: rgba(0, 0, 0, 0.6);
+  fill: rgba(0, 0, 0, 0.4);
 }
 
 .navbar .container .nav {
   display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .navbar .container .nav li {
-  margin-left: 2rem;
+  margin-left: 0.5rem;
 }
 
 .navbar .container .nav li a {
   text-decoration: none;
+  font-size: 0.8rem;
   transition: all 0.3s ease-in;
 }
 
 .navbar .container .nav li a:hover {
   color: rgba(0, 0, 0, 0.6);
-}
+} 
 
 @media (min-width: 640px) {
-  .navbar {
-    font-size: 0.9rem;
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .container .nav {
+    margin-bottom: 0;
   }
 
   .navbar .container .nav li {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
+
+  .navbar .container .nav li a {
+    font-size: 1rem;
+  }
+
+  .navbar .container .logo svg {
+    width: 120px;
+    height: 120px;
+  }
+
 }
 
