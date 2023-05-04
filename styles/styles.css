@@ -591,8 +591,11 @@ a {
   text-align: center;
 }
 
+.use-docker .container .use-docker-container .code-to-text {
+  margin: 4rem 0;
+}
+
 .use-docker .container .use-docker-container .code-to-text h1 {
-  margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -604,6 +607,7 @@ a {
 .use-docker .container .use-docker-container .card-container {
   margin: 2rem 0 !important;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
@@ -613,6 +617,53 @@ a {
   border-radius: 10px;
   padding: 30px 30px 45px 30px;
   box-shadow: 0 4px 30px rgba(11,33,74,0.11), 0 -2px 5px rgba(11,33,74,0.03);
+}
+
+.use-docker .container .use-docker-container .card-container .card .img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+}
+
+.use-docker .container .use-docker-container .card-container .card .img-wrapper img {
+  display: block;
+  width: 250px;
+  margin: auto;
+}
+
+.use-docker .container .use-docker-container .card-container .card p {
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.use-docker .container .use-docker-container .card-container .card a {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  color: #0073ec;
+}
+
+.use-docker .learn-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.use-docker .learn-more a {
+  background-color: #0073ec;
+  border: none;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in;
+}
+
+.use-docker .learn-more a:hover {
+  background-color: #0162cc;
 }
 
 @media (min-width: 640px) {
@@ -647,6 +698,21 @@ a {
     text-align: center;
     margin: auto;
     margin-top: 1rem;
+  }
+
+  .use-docker .container .use-docker-container .card-container {
+    flex-direction: row;
+  }
+
+  .use-docker .container .use-docker-container .card-container .card .img-wrapper {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .use-docker .container .use-docker-container .card-container {
+    flex-direction: column;
   }
 }
 
